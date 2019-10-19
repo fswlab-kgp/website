@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  body
+    include navbar 
+    br
+    br
+    br
+    .justify-content-center
+    .row.justify-content-center
+        h1. Doctoral Students
+    br
+    br
+    .container
+      ul#myTab.nav.nav-tabs(role='tablist')
+        li.nav-item
+          a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
+            | Current
+        li.nav-item
+          a#profile-tab.nav-link(data-toggle='tab', href='#bookc', role='tab', aria-controls='profile', aria-selected='false')
+            | Completed
+
+    #myTabContent.tab-content
+      #patents.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+        include students/Doctoral/curr.jade
+      #ijourn.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
+        include students/Doctoral/comp.jade 
+         
+    

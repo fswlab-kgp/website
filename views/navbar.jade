@@ -10,26 +10,20 @@ nav.navbar.stickyt-top.navbar-expand-lg.navbar-dark.bg-dark
               | Home 
               span.sr-only (current)
           li.nav-item
-            a.nav-link(href='#') Facilities
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              | Projects
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') on FSW
-              a.dropdown-item(href='#') General
+            a.nav-link(href='/facilities') Facilities
+          li.nav-item
+            a.nav-link(href='/projects') Projects
           li.nav-item.dropdown
             a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
               | Students
             .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') Doctoral
-              a.dropdown-item(href='#') PG
-              a.dropdown-item(href='#') UG
-              a.dropdown-item(href='#') Interns
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-              | Publications
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') on FSW
-              a.dropdown-item(href='/pubt') Total
+              a.dropdown-item(href='/doctorals') Doctoral
+              a.dropdown-item(href='/pg') PG
+              a.dropdown-item(href='/ug') UG
+              a.dropdown-item(href='/interns') Interns
           li.nav-item
-            a.nav-link(href='#') Calendar
+            a.nav-link(href='#') Publications
+          li.nav-item
+            a.nav-link(href='#') Collaborators
+          li.nav-item
+            a.nav-link(href='#') Calendar  

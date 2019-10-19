@@ -6,8 +6,34 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 /* GET publications page. */
-router.get('/pubt', function(req, res, next) {
-  res.render('pub_tot', { title: 'Express' });
+router.get('/pub', function(req, res, next) {
+  res.render('pub_fsw', { title: 'Express' });
 });
+/* GET projects page. */
+router.get('/projects', function(req, res, next) {
+  res.render('project_fsw', { title: 'Express' });
+});
+/* GET Doctoral Students page. */
+router.get('/doctorals', function(req, res, next) {
+  res.render('students/doctoral', { title: 'Express' });
+});
+/* GET UG page. */
+router.get('/ug', function(req, res, next) {
+  res.render('students/ug', { title: 'Express' });
+});
+/* GET PG page. */
+router.get('/pg', function(req, res, next) {
+  res.render('students/pg', { title: 'Express' });
+});
+/* GET Interns page. */
+router.get('/interns', function(req, res, next) {
+  res.render('students/interns', { title: 'Express' });
+});
+/* GET Facilities page. */
+router.get('/facilities', function(req, res, next) {
+  res.render('facilities', { title: 'Express' });
+});
+
+
 
 module.exports = router;
