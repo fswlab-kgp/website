@@ -96,6 +96,9 @@ border-right: solid 2px ;
 .facil-img{
     width: 400px;
 }
+.facil-img-small{
+    width: 200px;
+}
 .custom-bullet li {
     display: block;
 }
