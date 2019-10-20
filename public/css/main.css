@@ -45,10 +45,22 @@ margin:5% 7% ;
 }
 
 .top-new{
-    padding: 20%;
+    padding: 10%;
     height: 60vh;
     margin-right: -30px;
     overflow-y: auto;
+}
+.event-div{
+    border-top: solid black;
+    padding-left: 8px;
+    padding-right: 2px;
+}
+.event-div:hover{
+    background-color: black;
+    color: wheat;
+}
+.event-button{
+    width: 100%;
 }
 #about{
     margin: 0% 2% 2% 2.5%;
@@ -98,6 +110,14 @@ border-right: solid 2px ;
 }
 .facil-img-small{
     width: 200px;
+}
+.collab-div{
+    padding-top: 3em;
+    padding-left: 9em;
+    padding-right: 9em;
+}
+.collab-img{
+    width: 12em;
 }
 .custom-bullet li {
     display: block;

@@ -1,149 +1,265 @@
+br
+br
 .row.justify-content-center
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-    br
-    br
-    br
-    .row.justify-content-center
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
-        .col-md-2.text-center
-            img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
-            br
-            br
-            span
-                h4 Student Name
-            button.btn.btn-light(type='button') Show Profile
-            br
-            span
-                span.fs-std
-                a(href='')
-                    i.fas.fa-at(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-linkedin(style='color: black;')
-                span.fs-std
-                a(href='')
-                    i.fab.fa-facebook(style='color: black;')
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#studentx') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #studentx.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#exampleModalCenter') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#exampleModalCenter') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#exampleModalCenter') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+        br
+        br
+        br
+.row.justify-content-center
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#exampleModalCenter') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#exampleModalCenter') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#student1') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
+                
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/3.jpg', alt='')
+        br
+        br
+        span
+            h4 Student Name
+        button.btn.btn-light(type='button', data-toggle='modal', data-target='#exampleModalCenter') Show Profile
+        br
+        span
+            span.fs-std
+            a(href='')
+                i.fs-std.fas.fa-at(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-linkedin(style='color: black;')
+            span.fs-std
+            a(href='')
+                i.fs-std.fab.fa-facebook(style='color: black;')
+     // Modal
+    #student1.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered(role='document')
+            .modal-content
+                .modal-header
+                    h5#exampleModalCenterTitle.modal-title Modal title
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    | ...
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Close
+                   
+
