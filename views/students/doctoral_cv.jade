@@ -1,0 +1,18 @@
+.row.justify-content-center
+    h1 Doctoral Students
+    br
+    br
+    .container
+      ul#myTab.nav.nav-tabs.justify-content-center(role='tablist')
+        li.nav-item
+          a#home-tab.nav-link.active(data-toggle='tab', href='#current', role='tab', aria-controls='home', aria-selected='true')
+            | Current
+        li.nav-item
+          a#profile-tab.nav-link(data-toggle='tab', href='#completed', role='tab', aria-controls='profile', aria-selected='false')
+            | Completed
+
+    #myTabContent.tab-content
+      #current.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='current-tab')
+        include Doctoral/curr_cv.jade
+      #completed.tab-pane.fade(role='tabpanel', aria-labelledby='completed-tab')
+        include Doctoral/comp_cv.jade 

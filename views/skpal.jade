@@ -1,0 +1,92 @@
+extends layout2
+
+block content
+  body(style='padding: 5%;')
+    .container
+      .row
+        .col-md-4
+          img(src='./img/prof_skp.PNG', alt='', width='300px')
+        .col-md-8
+          .display-3 Surjya Kanta Pal
+          hr
+          |                 Lord Kumar Bhattacharyya Chair Professor in Manufacturing,
+          br
+          |                 Department of Mechanical Engineering, 
+          br
+          |                 Indian Institute of Technology Kharagpur 
+          br
+          |                 721 302, WB, India 
+          br
+          |                 Email: skpal@mech.iitkgp.ac.in 
+          br
+          |                 Ph: +91-3222-282996
+    .row(style='padding-top: 5%;')
+      .col-md-6
+        h5 Research Interests
+        ul(type='square')
+          li
+            | Friction Stir Welding
+          li
+            | Industry 4.0
+          li
+            | Modelling and Simulation of Manufacturing Process, and
+          li
+            | Ultrafast Cooling methodologies for metal strips in rolling process
+      .col-md-6
+        h5 EDUCATION/QUALIFICATIONS
+        ul(type='square')
+          li
+            | B.E (1991, Government Engineering College, Jalpaiguri, WB.)
+          li
+            | M.Tech (1993, I.I.T Kanpur)
+          li
+            | Ph.D. (1999, I.I.T Kharagpur)
+          li
+            | Postdoctoral Research (1999-2002), University of Sheffield, UK
+    .row(style='padding-top: 5%;')
+      h5 Responsibility
+    .row
+      h6 Current
+      ul
+        li  Professor, Department of Mechanical Engineering
+        li Associate Dean, Alumni Affairs
+        li  Professor-in-Charge, Centre of Excellence in Advanced Manufacturing Technology
+        li Chairman, Steel Technology Centre
+        li  Executive Adviser, Science and Technology Entrepreneurs’ Park (STEP)
+        li Prof-in-Charge: Metrology Lab
+    .row
+      h6 Past
+      ul
+        li  Chairman, Hall Management Centre
+        li Organizing Vice-Chairman, JEE (Adv)-2014
+        li Vice-Chairman, JEE (Adv)-2013
+    .row(style='padding-top: 2%;')
+      .col-md-6
+        h5 Teaching Experience
+        ul(type='square')
+          li
+            | IIT Guwahati (July 2002- July 2004)
+          li
+            | IIT Kharagpur (July 2004- till date)
+      .col-md-6
+        h5 Industrial Experience
+        ul(type='square')
+          li
+            | Engineering & Development Division of Grasim Industries Ltd. (MP) (1994-1995)
+    .row.justify-content-center(style='padding-top: 2%;')
+      p
+        button.btn.btn-outline-dark(type='button', data-toggle='collapse', data-target='#collapseExample1', aria-expanded='false', aria-controls='collapseExample')
+          | Projects
+        button.btn.btn-outline-dark(type='button', data-toggle='collapse', data-target='#collapseExample2', aria-expanded='false', aria-controls='collapseExample')
+          | Publications
+        button.btn.btn-outline-dark(type='button', data-toggle='collapse', data-target='#collapseExample3', aria-expanded='false', aria-controls='collapseExample')
+          | Student-Guidance
+      #collapseExample1.collapse
+        .card.card-body
+          include publications/overall/patent
+      #collapseExample2.collapse
+        .card.card-body
+          include pub_tot
+      #collapseExample3.collapse
+        .card.card-body
+          include students/doctoral_cv    

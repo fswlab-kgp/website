@@ -37,6 +37,9 @@ router.get('/facilities', function(req, res, next) {
 router.get('/collab', function(req, res, next) {
   res.render('collab', { title: 'Express' });
 });
-
+/* GET CV page. */
+router.get('/skpal', function(req, res, next) {
+  res.render('skpal', { title: 'Express' });
+});
 
 module.exports = router;
