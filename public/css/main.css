@@ -137,6 +137,9 @@ border-right: solid 2px ;
 a{
     color: black;
 }
+a.home{
+    color: white;
+}
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     display: block;
     height: auto;
