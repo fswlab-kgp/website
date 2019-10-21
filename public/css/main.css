@@ -71,7 +71,7 @@ margin:5% 7% ;
     border-radius: 10px;; */
 }
 .bg-about{
-    background-color: #7e0000;
+    background-color: #7e0000 !important;
     padding: 3%;
 }
 .ab-img{
@@ -127,7 +127,7 @@ border-right: solid 2px ;
 {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";
-    font-family: 'Glyphicons Halflings';
+    font-family: 'Glyphicons-Halflings';
     font-size: 9px;
     float: left;
     margin-top: 4px;
