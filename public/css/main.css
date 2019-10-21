@@ -39,7 +39,7 @@ margin:5% 7% ;
     width:100% ;
 }
 .label{
-    background-image: url("../img/slider11.jpg") !important;
+    /* background-image: url("../img/slider11.jpg") !important; */
     background-size:cover ;
     height: 60vh;
 }
@@ -137,3 +137,11 @@ border-right: solid 2px ;
 a{
     color: black;
 }
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: 1;
+    margin:auto;
+    width: 100%; 
+    }
