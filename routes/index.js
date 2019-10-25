@@ -10,8 +10,11 @@ router.get('/pub', function(req, res, next) {
   res.render('pub_fsw', { title: 'Express' });
 });
 /* GET projects page. */
-router.get('/projects', function(req, res, next) {
-  res.render('project_fsw', { title: 'Express' });
+router.get('/projc', function(req, res, next) {
+  res.render('project_fsw_c', { title: 'Express' });
+});
+router.get('/projs', function(req, res, next) {
+  res.render('project_fsw_s', { title: 'Express' });
 });
 /* GET Doctoral Students page. */
 router.get('/doctorals', function(req, res, next) {
