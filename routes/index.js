@@ -36,6 +36,10 @@ router.get('/interns', function(req, res, next) {
 router.get('/facilities', function(req, res, next) {
   res.render('facilities', { title: 'Express' });
 });
+/* GET News page. */
+router.get('/news', function(req, res, next) {
+  res.render('news', { title: 'Express' });
+});
 /* GET Collaborations page. */
 router.get('/collab', function(req, res, next) {
   res.render('collab', { title: 'Express' });
