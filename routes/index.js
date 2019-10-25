@@ -48,5 +48,9 @@ router.get('/collab', function(req, res, next) {
 router.get('/skpal', function(req, res, next) {
   res.render('skpal', { title: 'Express' });
 });
+/* GET Calendar page. */
+router.get('/cal', function(req, res, next) {
+  res.render('cal', { title: 'Express' });
+});
 
 module.exports = router;
