@@ -56,6 +56,7 @@ block content
       h5 Responsibility
     .row
       h6 Current
+      br
       ul
         li  
           | Professor, 
@@ -74,7 +75,8 @@ block content
         li 
           | Prof-in-Charge: Metrology Lab
     .row
-      h6 Past
+      h6 Past &emsp;
+      br
       ul
         li 
           | Chairman,  
@@ -99,19 +101,28 @@ block content
           li
             | Engineering & Development Division of Grasim Industries Ltd. (MP) (1994-1995)
     .row.justify-content-center(style='padding-top: 2%;')
-      p
-        button.btn.btn-dark(type='button', data-toggle='collapse', data-target='#collapseExample1', aria-expanded='false', aria-controls='collapseExample')
-          | Projects
-        button.btn.btn-outline-dark(type='button', data-toggle='collapse', data-target='#collapseExample2', aria-expanded='false', aria-controls='collapseExample')
-          | Publications
-        button.btn.btn-outline-dark(type='button', data-toggle='collapse', data-target='#collapseExample3', aria-expanded='false', aria-controls='collapseExample')
-          | Student-Guidance
-      #collapseExample1.collapse
-        .card.card-body
-          include publications/overall/patent
-      #collapseExample2.collapse
-        .card.card-body
-          include pub_tot
-      #collapseExample3.collapse
-        .card.card-body
-          include students/doctoral_cv    
+      #accordion
+        .card
+          #headingOne.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                | Patents
+          #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
+            
+              include publications/overall/patent
+        .card
+          #headingTwo.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                | Publications
+          #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+            .card-body
+              include pub_tot
+        .card
+          #headingThree.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                | Student Guidance
+          #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+            .card-body
+              include students/doctoral_cv
