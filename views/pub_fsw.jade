@@ -11,19 +11,24 @@ block content
       ul#myTab.nav.nav-tabs(role='tablist')
         li.nav-item
           a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
-            | Patents
+            | Patents &emsp;
+            h5(style='color: #009999; font-family:Georgia, serif') (5)
         li.nav-item
           a#profile-tab.nav-link(data-toggle='tab', href='#bookc', role='tab', aria-controls='profile', aria-selected='false')
-            | Book Chapters
+            | Book Chapters &emsp;
+            h5(style='color: #009999; font-family:Georgia, serif') (4)
         li.nav-item
           a#contact-tab.nav-link(data-toggle='tab', href='#ijourn', role='tab', aria-controls='contact', aria-selected='false')
-            | International Journals
+            | International Journals &emsp;
+            h5(style='color: #009999; font-family:Georgia, serif') (31)
         li.nav-item
           a#contact-tab.nav-link(data-toggle='tab', href='#njourn', role='tab', aria-controls='contact', aria-selected='false')
-            | National Journals
+            | National Journals &emsp;
+            h5(style='color: #009999; font-family:Georgia, serif') (1)
         li.nav-item
           a#contact-tab.nav-link(data-toggle='tab', href='#conf', role='tab', aria-controls='contact', aria-selected='false')
-            | Conferences
+            | Conferences &emsp;
+            h5(style='color: #009999; font-family:Georgia, serif') (4)
     #myTabContent.tab-content
       #patents.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
         include publications/fsw/patent
