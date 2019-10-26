@@ -58,7 +58,60 @@ br
                     
 br
 br
-.row.justify-content-center
+br
+    .col-md-2.text-center
+        img.rounded-circle.profile-img(src='./img/Students/doctoral/Kanchan.jpg', alt='')
+        br
+        span
+            h4 
+                a(data-toggle='modal', data-target='#kanchan',href='#kanchan') Dr. Kanchan Kumari
+     // Modal
+    #kanchan.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
+        .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role='document')
+            .modal-content
+                .modal-header
+                    h4#exampleModalCenterTitle.modal-title(style='color: #d9534f; font-family:Georgia, serif; font-weight-bold') Dr. Kanchan Kumari
+                    br
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                    img.rounded-circle.float-right(src='./img/profile/Kanchansmall.jpg', alt='')
+                    span(aria-hidden='true') ×
+                .modal-body
+                    br
+                    h5(style='color: #009999; font-family:Georgia, serif') Supervisor
+                    a(href='http://www.fswlab.in/skpal') Prof. Surjya K Pal
+                    br
+                    br
+                    h5(style='color: #009999; font-family:Georgia, serif') Doctoral Research Problem
+                    p
+                    | Novel Twin Tool Based Friction Stir Welding of Aluminum Alloys
+                    br
+                    br
+                    h5(style='color: #009999; font-family:Georgia, serif') Research Statement
+                    | Most of the research woks in FSW have been conducted using the traditional single tool system. This leads to non-unifrom temperature distribution across the weld plates. FSW also requires heavy clamping force abd high downward force to maintain the contact between the tool and the workpiece intact. To tackle this, a twin tool has been indignenously develeoped and farbicated. This consists of two tools rotating in opposite directions and moving simulateneously. The tool system requires less clamping force as the two tools counter each other. It disrupts and fragments the residual oxide layer remained in the first weld region by the follower tool, thus, enhancing the weld quality. Good quality welds can be achieved with higher welding speeds. 
+                    br
+                    br
+                    h5(style='color: #009999; font-family:Georgia, serif') Publications
+                    a(href='http://www.fswlab.in/pub') Link
+                    br
+                    br
+                    h5(style='color: #009999; font-family:Georgia, serif') Quick Links
+                    ul
+                        li
+                            | Email: kanchan.1087@gmail.com
+                        li
+                            a(href='https://www.researchgate.net/profile/Kanchan_Kumari5') ResearchGate
+                        //li
+                            a(href='https://scholar.google.co.in/citations?user=YwlcmQoAAAAJ&hl=en') Google Scholar
+                        //li
+                            a(href= 'https://in.linkedin.com/in/rahul-jain-432b0417') LinkedIn
+                        //li
+                            a(href= 'https://www.iitbhilai.ac.in/index.php?pid=rahul') Personal Website  
+                .modal-footer
+                    button.btn.btn-secondary(type='button', data-dismiss='modal') Closebr
+                    
+br
+br
+br
     .col-md-2.text-center
         img.rounded-circle.profile-img(src='./img/Students/doctoral/Rahul.jpg', alt='')
         br
@@ -123,57 +176,3 @@ br
                             a(href= 'https://www.iitbhilai.ac.in/index.php?pid=rahul') Personal Website  
                 .modal-footer
                     button.btn.btn-secondary(type='button', data-dismiss='modal') Closebr
-                                        
-br
-br
-.row.justify-content-center
-    .col-md-2.text-center
-        img.rounded-circle.profile-img(src='./img/Students/doctoral/Kanchan.jpg', alt='')
-        br
-        span
-            h4 
-                a(data-toggle='modal', data-target='#kanchan',href='#kanchan') Dr. Kanchan Kumari
-     // Modal
-    #kanchan.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle', aria-hidden='true')
-        .modal-dialog.modal-dialog-centered.modal-dialog-scrollable(role='document')
-            .modal-content
-                .modal-header
-                    h4#exampleModalCenterTitle.modal-title(style='color: #d9534f; font-family:Georgia, serif; font-weight-bold') Dr. Kanchan Kumari
-                    br
-                    button.close(type='button', data-dismiss='modal', aria-label='Close')
-                    img.rounded-circle.float-right(src='./img/profile/Kanchansmall.jpg', alt='')
-                    span(aria-hidden='true') ×
-                .modal-body
-                    br
-                    h5(style='color: #009999; font-family:Georgia, serif') Supervisor
-                    a(href='http://www.fswlab.in/skpal') Prof. Surjya K Pal
-                    br
-                    br
-                    h5(style='color: #009999; font-family:Georgia, serif') Doctoral Research Problem
-                    p
-                    | Novel Twin Tool Based Friction Stir Welding of Aluminum Alloys
-                    br
-                    br
-                    h5(style='color: #009999; font-family:Georgia, serif') Research Statement
-                    | Most of the research woks in FSW have been conducted using the traditional single tool system. This leads to non-unifrom temperature distribution across the weld plates. FSW also requires heavy clamping force abd high downward force to maintain the contact between the tool and the workpiece intact. To tackle this, a twin tool has been indignenously develeoped and farbicated. This consists of two tools rotating in opposite directions and moving simulateneously. The tool system requires less clamping force as the two tools counter each other. It disrupts and fragments the residual oxide layer remained in the first weld region by the follower tool, thus, enhancing the weld quality. Good quality welds can be achieved with higher welding speeds. 
-                    br
-                    br
-                    h5(style='color: #009999; font-family:Georgia, serif') Publications
-                    a(href='http://www.fswlab.in/pub') Link
-                    br
-                    br
-                    h5(style='color: #009999; font-family:Georgia, serif') Quick Links
-                    ul
-                        li
-                            | Email: kanchan.1087@gmail.com
-                        li
-                            a(href='https://www.researchgate.net/profile/Kanchan_Kumari5') ResearchGate
-                        //li
-                            a(href='https://scholar.google.co.in/citations?user=YwlcmQoAAAAJ&hl=en') Google Scholar
-                        //li
-                            a(href= 'https://in.linkedin.com/in/rahul-jain-432b0417') LinkedIn
-                        //li
-                            a(href= 'https://www.iitbhilai.ac.in/index.php?pid=rahul') Personal Website  
-                .modal-footer
-                    button.btn.btn-secondary(type='button', data-dismiss='modal') Closebr
-
