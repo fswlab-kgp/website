@@ -106,10 +106,10 @@ block content
           #headingOne.card-header
             h5.mb-0.text-center
               button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
-                | Patents
+                | Projects
           #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
             
-              include publications/overall/patent
+              include projects/total/data
         .card
           #headingTwo.card-header
             h5.mb-0.text-center
@@ -125,4 +125,7 @@ block content
                 | Student Guidance
           #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
             .card-body
+              include students/doctoral_cv
+              br
+              br
               include students/doctoral_cv
