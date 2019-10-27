@@ -25,6 +25,36 @@ block content
               a(href='https://scholar.google.co.in/citations?user=rj8w-HgAAAAJ&hl=en') <img src="img/googlescholar.jpg" alt="" width="50" height="50"> &emsp;
               a(href='https://www.facebook.com/surjyak.pal') <img src="img/facebook.jpg" alt="" width="50" height="50">
          
+    .row.justify-content-center(style='padding-top: 2%;')
+      #accordion
+        .card
+          #headingOne.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                | Projects
+          #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
+            
+              include projects/total/data
+        .card
+          #headingTwo.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                | Publications
+          #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+            .card-body
+              include pub_tot
+        .card
+          #headingThree.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                | Student Guidance
+          #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+            .card-body
+              include students/doctoral_cv
+              br
+              br
+              include students/pg_cv
+
     .row(style='padding-top: 5%;')
       .col-md-6
         h5 Research Interests
@@ -100,32 +130,4 @@ block content
         ul(type='square')
           li
             | Engineering & Development Division of Grasim Industries Ltd. (MP) (1994-1995)
-    .row.justify-content-center(style='padding-top: 2%;')
-      #accordion
-        .card
-          #headingOne.card-header
-            h5.mb-0.text-center
-              button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
-                | Projects
-          #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
-            
-              include projects/total/data
-        .card
-          #headingTwo.card-header
-            h5.mb-0.text-center
-              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                | Publications
-          #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
-            .card-body
-              include pub_tot
-        .card
-          #headingThree.card-header
-            h5.mb-0.text-center
-              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                | Student Guidance
-          #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
-            .card-body
-              include students/doctoral_cv
-              br
-              br
-              include students/pg_cv
+    
