@@ -32,6 +32,10 @@ router.get('/pg', function(req, res, next) {
 router.get('/interns', function(req, res, next) {
   res.render('students/interns', { title: 'Express' });
 });
+/* GET Staff page. */
+router.get('/staff', function(req, res, next) {
+  res.render('students/staff', { title: 'Express' });
+});
 /* GET Facilities page. */
 router.get('/facilities', function(req, res, next) {
   res.render('facilities', { title: 'Express' });
