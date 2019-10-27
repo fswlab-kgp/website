@@ -25,6 +25,36 @@ block content
               a(href='https://scholar.google.co.in/citations?user=rj8w-HgAAAAJ&hl=en') <img src="img/googlescholar.jpg" alt="" width="50" height="50"> &emsp;
               a(href='https://www.facebook.com/surjyak.pal') <img src="img/facebook.jpg" alt="" width="50" height="50">
          
+    .row.justify-content-center(style='padding-top: 1%;')
+      #accordion
+        .card
+          #headingOne.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
+                | Projects
+          #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
+            
+              include projects/total/data
+        .card
+          #headingTwo.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
+                | Publications
+          #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
+            .card-body
+              include pub_tot
+        .card
+          #headingThree.card-header
+            h5.mb-0.text-center
+              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
+                | Student Guidance
+          #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
+            .card-body
+              include students/doctoral_cv
+              br
+              br
+              include students/pg_cv
+
     .row(style='padding-top: 5%;')
       .col-md-6
         h5 Research Interests
@@ -32,7 +62,7 @@ block content
           li
             | Friction Stir Welding
           li
-            | Industry 4.0
+             a(href= 'http://www.coeamt.com/industry-project-project1.php') Industry 4.0
           li
             | Modelling and Simulation of Manufacturing Process
           li
@@ -63,7 +93,7 @@ block content
           a(href= 'http://www.iitkgp.ac.in/department/ME') Department of Mechanical Engineering
         li 
           | Associate Dean, 
-          a(href= 'http://www.iitkgp.ac.in/department/AL/staff') Alumni Affairs
+          a(href= 'https://www.alumni.iitkgp.ac.in/') Alumni Affairs
         li  
           | Professor-in-Charge, 
           a(href= 'http://www.coeamt.com/') Centre of Excellence in Advanced Manufacturing Technology
@@ -73,7 +103,7 @@ block content
           | Executive Adviser, 
           a(href= 'https://www.step-iit.org/') Science and Technology Entrepreneurs’ Park (STEP)
         li 
-          | Prof-in-Charge: Metrology Lab
+          | Prof-in-Charge: Metrology Lab and FSW Lab
     .row
       h6 Past &emsp;
       br
@@ -91,7 +121,7 @@ block content
         ul(type='square')
           li
              a(href= 'http://www.iitg.ac.in/') IIT Guwahati 
-            | (July 2002- July 2004)
+             | (July 2002- July 2004)
           li
             a(href= 'http://www.iitg.ac.in/') IIT Kharagpur 
             | (July 2004- till date)
@@ -100,32 +130,4 @@ block content
         ul(type='square')
           li
             | Engineering & Development Division of Grasim Industries Ltd. (MP) (1994-1995)
-    .row.justify-content-center(style='padding-top: 2%;')
-      #accordion
-        .card
-          #headingOne.card-header
-            h5.mb-0.text-center
-              button.btn.btn-link(data-toggle='collapse', data-target='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
-                | Projects
-          #collapseOne.collapse.collapsed(aria-labelledby='headingOne', data-parent='#accordion')
-            
-              include projects/total/data
-        .card
-          #headingTwo.card-header
-            h5.mb-0.text-center
-              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
-                | Publications
-          #collapseTwo.collapse(aria-labelledby='headingTwo', data-parent='#accordion')
-            .card-body
-              include pub_tot
-        .card
-          #headingThree.card-header
-            h5.mb-0.text-center
-              button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
-                | Student Guidance
-          #collapseThree.collapse(aria-labelledby='headingThree', data-parent='#accordion')
-            .card-body
-              include students/doctoral_cv
-              br
-              br
-              include students/pg_cv
+    
