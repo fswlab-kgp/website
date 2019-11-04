@@ -27,20 +27,20 @@ block content
               .carousel-caption.d-none.d-md-block
                 h5 FSW Lab
                 p Inside view
-            //.carousel-item
+            .carousel-item
               img.d-block(src='./img/banner/3.JPG', alt='...')
               .carousel-caption.d-none.d-md-block
                 h5 Picnic at Tajpur
-            //.carousel-item
+            .carousel-item
               img.d-block(src='./img/banner/4.JPG', alt='...')
               .carousel-caption.d-none.d-md-block
                 h5 Birthday celebration
-            //.carousel-item
+            .carousel-item
               img.d-block(src='./img/banner/5.jpg', alt='...')
               .carousel-caption.d-none.d-md-block
                 h5 FSW Lab
                 p Inside view               
-            //.carousel-item
+            .carousel-item
               img.d-block(src='./img/banner/6.jpg', alt='...')
               .carousel-caption.d-none.d-md-block
                 h5 Farewell
@@ -290,34 +290,51 @@ block content
 
 
       .row.m-3  
+        .col-md-3
+          .card(style='width: 18rem;')
+            img.card-img-top(src='./img/patents/himal.jpg', alt='...')
+            .card-body
+              h5.card-title Our Achievements
+              p.card-text
+                | Mr.  Himal Agrawal has won in “ASME IDSC (Innovative Design Simulation Challenge)-2016” for his work on “A Thermo-mechanical coupled simulation of friction stir welding with experimental validation”,
+              //a.btn.btn-primary(href='#') Go somewhere
+              
         .col-md-3.offset-md-1
           .card(style='width: 18rem;')
             #carouselControls1.carousel.slide(data-ride='carousel')
               .carousel-inner
                 .carousel-item.active
                   .card(style='width: 18rem;')
-                    img.card-img-top(src='./img/banner/1.jpg', alt='...')
+                    img.card-img-top(src='./img/banner/3.JPG', alt='...')
                     .card-body
-                      h5.card-title Research 1
+                      h5.card-title Our Fun
                       p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                      a.btn.btn-primary(href='#') Go somewhere
+                        | Picnic at Tajpur
+                      //a.btn.btn-primary(href='#') Go somewhere
                 .carousel-item
                   .card(style='width: 18rem;')
-                    img.card-img-top(src='./img/banner/1.jpg', alt='...')
+                    img.card-img-top(src='./img/banner/4.JPG', alt='...')
                     .card-body
-                      h5.card-title Research 2
+                      h5.card-title Our Fun
                       p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                      a.btn.btn-primary(href='#') Go somewhere
+                        | Birthday Celebration
+                      //a.btn.btn-primary(href='#') Go somewhere
                 .carousel-item
                   .card(style='width: 18rem;')
-                    img.card-img-top(src='./img/banner/1.jpg', alt='...')
+                    img.card-img-top(src='./img/banner/5.jpg', alt='...')
                     .card-body
-                      h5.card-title Research 3
+                      h5.card-title Our Fun
                       p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                      a.btn.btn-primary(href='#') Go somewhere
+                        | Inside View
+                      //a.btn.btn-primary(href='#') Go somewhere
+                .carousel-item
+                  .card(style='width: 18rem;')
+                    img.card-img-top(src='./img/banner/6.jpg', alt='...')
+                    .card-body
+                      h5.card-title Our Fun
+                      p.card-text
+                        | Farewell to scholars from University of Johannesburg, SA
+                      //a.btn.btn-primary(href='#') Go somewhere
               a.carousel-control-prev(href='#carouselControls1', role='button', data-slide='prev')
                 span.carousel-control-prev-icon(aria-hidden='true')
                 span.sr-only Previous
@@ -331,28 +348,28 @@ block content
               .carousel-inner
                 .carousel-item.active
                   .card(style='width: 18rem;')
-                    img.card-img-top(src='./img/banner/1.jpg', alt='...')
+                    img.card-img-top(src='./img/patents/vg.jpg', alt='...')
                     .card-body
-                      h5.card-title Patents 1
+                      h5.card-title Our Innovation
                       p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                      a.btn.btn-primary(href='#') Go somewhere
+                        | Counter Rotating Twin Tool with Variable Gap Setup for Friction Stir Welding
+                      a.btn.btn-primary(href='http://www.fswlab.in/pub') Read more
                 .carousel-item
                   .card(style='width: 18rem;')
-                    img.card-img-top(src='./img/banner/1.jpg', alt='...')
+                    img.card-img-top(src='./img/patents/cst.jpg', alt='...')
                     .card-body
-                      h5.card-title Patents 2
+                      h5.card-title Our Innovation
                       p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                      a.btn.btn-primary(href='#') Go somewhere
+                        | A Counter Rotating Pin and Shoulder Tool Arrangement for Friction Stir Weld System
+                      a.btn.btn-primary(href='http://www.fswlab.in/pub') Read more
                 .carousel-item
                   .card(style='width: 18rem;')
-                    img.card-img-top(src='./img/banner/1.jpg', alt='...')
+                    img.card-img-top(src='./img/patents/foam.jpg', alt='...')
                     .card-body
-                      h5.card-title Patents 3
+                      h5.card-title Our Innovation
                       p.card-text
-                        | Some quick example text to build on the card title and make up the bulk of the card's content.
-                      a.btn.btn-primary(href='#') Go somewhere
+                        | Add-on Kit for Doing Cost Effective, Energy Efficient, Rapid, Solid-State Friction Sintering on Vertical Milling/Drilling/Friction Stir Welding Machines
+                      a.btn.btn-primary(href='http://www.fswlab.in/pub') Read more
               a.carousel-control-prev(href='#carouselControls2', role='button', data-slide='prev')
                 span.carousel-control-prev-icon(aria-hidden='true')
                 span.sr-only Previous
@@ -364,7 +381,7 @@ block content
           .card(style='width: 18rem;')
             img.card-img-top(src='./img/banner/1.jpg', alt='...')
             .card-body
-              h5.card-title Industry 4.0
+              h5.card-title Our Industry Collaboration
               p.card-text
-                | Some quick example text to build on the card title and make up the bulk of the card's content.
-              a.btn.btn-primary(href='#') Go somewhere
+                | Executing a project with Tata Consultancy Services on Industry 4.0 in FSW under CoE in AMT
+              a.btn.btn-primary(href='http://www.coeamt.com/industry-project-project1.php') Read more
