@@ -105,4 +105,13 @@ if(window.location.href.indexOf('#vyas') != -1) {
   if(window.location.href.indexOf('#ananta') != -1) {
       $('#ananta').modal('show');
     }
+  if(window.location.href.indexOf('#Ram') != -1) {
+      $('#Ram').modal('show');
+    }
+  if(window.location.href.indexOf('#Kanchan') != -1) {
+      $('#Kanchan').modal('show');
+    }
+  if(window.location.href.indexOf('#Rahul') != -1) {
+      $('#Rahul').modal('show');
+    }
   });
