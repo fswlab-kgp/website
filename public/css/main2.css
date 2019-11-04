@@ -7,13 +7,14 @@
   background-size: auto 346.4102px;
   background-position: center;
 }
+
 .hexagon2 {
   position: relative;
-  width: 300px; 
-  height: 173.21px;
-  margin: 86.60px 0;
+  width: 200px; 
+  height: 115.47px;
+  margin: 57.74px 0;
   background-image: url("../img/prof_skp.PNG");
-  background-size: auto 346.4102px;
+  background-size: auto 230.9401px;
   background-position: center;
 }
 
@@ -21,14 +22,14 @@
 .hexBottom {
   position: absolute;
   z-index: 1;
-  width: 212.13px;
-  height: 212.13px;
+  width: 141.42px;
+  height: 141.42px;
   overflow: hidden;
   -webkit-transform: scaleY(0.5774) rotate(-45deg);
   -ms-transform: scaleY(0.5774) rotate(-45deg);
   transform: scaleY(0.5774) rotate(-45deg);
   background: inherit;
-  left: 43.93px;
+  left: 29.29px;
 }
 
 /*counter transform the bg image on the caps*/
@@ -36,11 +37,11 @@
 .hexBottom:after {
   content: "";
   position: absolute;
-  width: 300.0000px;
-  height: 173.20508075688775px;
-  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
-  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
-  transform:          rotate(45deg) scaleY(1.7321) translateY(-86.6025px);
+  width: 200.0000px;
+  height: 115.47005383792516px;
+  -webkit-transform:  rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+  -ms-transform:      rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
+  transform:          rotate(45deg) scaleY(1.7321) translateY(-57.7350px);
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
@@ -48,7 +49,7 @@
 }
 
 .hexTop {
-  top: -106.0660px;
+  top: -70.7107px;
 }
 
 .hexTop:after {
@@ -56,7 +57,7 @@
 }
 
 .hexBottom {
-  bottom: -106.0660px;
+  bottom: -70.7107px;
 }
 
 .hexBottom:after {
@@ -68,8 +69,8 @@
   position: absolute;
   top: 0.0000px;
   left: 0;
-  width: 300.0000px;
-  height: 173.2051px;
+  width: 200.0000px;
+  height: 115.4701px;
   z-index: 2;
   background: inherit;
 }

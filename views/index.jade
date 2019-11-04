@@ -2,121 +2,196 @@ extends layout
 
 block content
   body.body-home
-    include navbar    
+    include navbar
+    .bd-example.row
+      .col-md-8.bg-dark
+        #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+          ol.carousel-indicators
+            li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+            li(data-target='#carouselExampleCaptions', data-slide-to='1')
+            li(data-target='#carouselExampleCaptions', data-slide-to='2')
+            li(data-target='#carouselExampleCaptions', data-slide-to='3')
+            li(data-target='#carouselExampleCaptions', data-slide-to='4')
+            li(data-target='#carouselExampleCaptions', data-slide-to='5')
+            li(data-target='#carouselExampleCaptions', data-slide-to='6')
+            li(data-target='#carouselExampleCaptions', data-slide-to='7')
+
+          .carousel-inner
+            .carousel-item.active
+              img.d-block(src='./img/banner/2.JPG', alt='...',width:110%)
+              .carousel-caption.d-none.d-md-block
+                h5 Interns working on FSW machine
+                p Real time process control via image processing
+            .carousel-item
+              img.d-block(src='./img/banner/1.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h5 FSW Lab
+                p Inside view
+            .carousel-item
+              img.d-block(src='./img/banner/3.JPG', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h5 Picnic at Tajpur
+            .carousel-item
+              img.d-block(src='./img/banner/4.JPG', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h5 Birthday celebration
+            .carousel-item
+              img.d-block(src='./img/banner/5.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h5 FSW Lab
+                p Inside view               
+            .carousel-item
+              img.d-block(src='./img/banner/6.jpg', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h5 Farewell
+                p Scholars from University of Johannesburg, SA
+            .carousel-item
+              img.d-block(src='./img/banner/7.JPG', alt='...')
+              .carousel-caption.d-none.d-md-block
+                h5 Welded sample showcase & Robotic FSW    
+          a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+            span.carousel-control-prev-icon(aria-hidden='true')
+            span.sr-only Previous
+          a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+            span.carousel-control-next-icon(aria-hidden='true')
+            span.sr-only Next
+      .col-md-4.bg-primary.p-5
+        .row.prof-img.container.mx-auto.justify-content-center
+          .hexagon2
+            .hexTop
+            .hexBottom
+        .row.prof-q(style='margin-right: 2%;')
+          blockquote.text-light
+            p
+              
+              | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
+              | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
+              | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
+              | It is a family of some enthusiastic minds....."
+              
+            fp.blockquote-footer
+              span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
+                a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
+                br
+                a.home(href= 'http://www.kgpchronicle.iitkgp.ac.in/mission-possible/') Lord Kumar Bhattacharyya Chair Professor in Manufacturing
+              cite(title='Source Title') 
+              p
+
+    
     .content-home
-      .row.top
-        .col-md-8.label.space-d
-          //- #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
-          //-   .carousel-inner
-          //-     .carousel-item.active
-          //-       img.d-block.w-100.h-100(src='./img/banner/2.JPG', alt='...')
-          //-     .carousel-item
-          //-       img.d-block.w-100.h-100(src='./img/banner/1.jpg', alt='...')
-          //-     .carousel-item
-          //-       img.d-block.w-100.h-100(src='./img/banner/5.jpg', alt='...')    
-          //-     .carousel-item
-          //-       img.d-block.w-100.h-100(src='./img/banner/3.JPG', alt='...')
-          //-     .carousel-item
-          //-       img.d-block.w-100.h-100(src='./img/banner/4.JPG', alt='...')
-          //-     .carousel-item
-          //-       img.d-block.w-100.h-100(src='./img/banner/6.jpg', alt='...')
-          //-     .carousel-item
-          //-       img.d-block.w-100.h-100(src='./img/banner/7.JPG', alt='...')   
-          //-   a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
-          //-     span.carousel-control-prev-icon(aria-hidden='true')
-          //-     span.sr-only Previous
-          //-   a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
-          //-     span.carousel-control-next-icon(aria-hidden='true')
-          //-     span.sr-only Next
-          .bd-example
-            #carouselExampleCaptions.carousel.slide(data-ride='carousel')
-              ol.carousel-indicators
-                li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
-                li(data-target='#carouselExampleCaptions', data-slide-to='1')
-                li(data-target='#carouselExampleCaptions', data-slide-to='2')
-                li(data-target='#carouselExampleCaptions', data-slide-to='3')
-                li(data-target='#carouselExampleCaptions', data-slide-to='4')
-                li(data-target='#carouselExampleCaptions', data-slide-to='5')
-                li(data-target='#carouselExampleCaptions', data-slide-to='6')
-                li(data-target='#carouselExampleCaptions', data-slide-to='7')
+      //- .row.top
+      //-   .col-md-8.label.space-d
+      //-     //- #carouselExampleFade.carousel.slide.carousel-fade(data-ride='carousel')
+      //-     //-   .carousel-inner
+      //-     //-     .carousel-item.active
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/2.JPG', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/1.jpg', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/5.jpg', alt='...')    
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/3.JPG', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/4.JPG', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/6.jpg', alt='...')
+      //-     //-     .carousel-item
+      //-     //-       img.d-block.w-100.h-100(src='./img/banner/7.JPG', alt='...')   
+      //-     //-   a.carousel-control-prev(href='#carouselExampleFade', role='button', data-slide='prev')
+      //-     //-     span.carousel-control-prev-icon(aria-hidden='true')
+      //-     //-     span.sr-only Previous
+      //-     //-   a.carousel-control-next(href='#carouselExampleFade', role='button', data-slide='next')
+      //-     //-     span.carousel-control-next-icon(aria-hidden='true')
+      //-     //-     span.sr-only Next
+      //-     .bd-example
+      //-       #carouselExampleCaptions.carousel.slide(data-ride='carousel')
+      //-         ol.carousel-indicators
+      //-           li.active(data-target='#carouselExampleCaptions', data-slide-to='0')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='1')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='2')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='3')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='4')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='5')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='6')
+      //-           li(data-target='#carouselExampleCaptions', data-slide-to='7')
 
-              .carousel-inner
-                .carousel-item.active
-                  img.d-block.w-100(src='./img/banner/2.JPG', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 Interns working on FSW machine
-                    p Real time process control via image processing
-                .carousel-item
-                  img.d-block.w-100(src='./img/banner/1.jpg', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 FSW Lab
-                    p Inside view
-                .carousel-item
-                  img.d-block.w-100(src='./img/banner/3.JPG', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 Picnic at Tajpur
-                .carousel-item
-                  img.d-block.w-100(src='./img/banner/4.JPG', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 Birthday celebration
-                .carousel-item
-                  img.d-block.w-100(src='./img/banner/5.jpg', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 FSW Lab
-                    p Inside view               
-                .carousel-item
-                  img.d-block.w-100(src='./img/banner/6.jpg', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 Farewell
-                    p Scholars from University of Johannesburg, SA
-                .carousel-item
-                  img.d-block.w-100(src='./img/banner/7.JPG', alt='...')
-                  .carousel-caption.d-none.d-md-block
-                    h5 Welded sample showcase & Robotic FSW    
-              a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
-                span.carousel-control-prev-icon(aria-hidden='true')
-                span.sr-only Previous
-              a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
-                span.carousel-control-next-icon(aria-hidden='true')
-                span.sr-only Next
+      //-         .carousel-inner
+      //-           .carousel-item.active
+      //-             img.d-block.w-100(src='./img/banner/2.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Interns working on FSW machine
+      //-               p Real time process control via image processing
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/1.jpg', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 FSW Lab
+      //-               p Inside view
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/3.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Picnic at Tajpur
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/4.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Birthday celebration
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/5.jpg', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 FSW Lab
+      //-               p Inside view               
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/6.jpg', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Farewell
+      //-               p Scholars from University of Johannesburg, SA
+      //-           .carousel-item
+      //-             img.d-block.w-100(src='./img/banner/7.JPG', alt='...')
+      //-             .carousel-caption.d-none.d-md-block
+      //-               h5 Welded sample showcase & Robotic FSW    
+      //-         a.carousel-control-prev(href='#carouselExampleCaptions', role='button', data-slide='prev')
+      //-           span.carousel-control-prev-icon(aria-hidden='true')
+      //-           span.sr-only Previous
+      //-         a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
+      //-           span.carousel-control-next-icon(aria-hidden='true')
+      //-           span.sr-only Next
 
-        .col-md-3.space-d(style='margin-left: 5%;!important')
-          .top-new.justify-content-center.bg-warning
-            h3.text-center Whats New
-            .event-div 
-              span.font-weight-bold 
-              a.home(href= 'http://www.fswlab.in/doctorals') Ranjan Kumar Vishwakarma 
-              | joined Ph.D after completing MTech from FSW Lab
-              br
-            .event-div  
-              span.font-weight-bold
-              a.home(href= 'http://www.fswlab.in/doctorals') Ananta Dutta 
-              | joined our FSW Lab after his MTech from IIT Bhubaneswar
-              br
-            .event-div  
-              span.font-weight-bold 
-              a.home(href= 'http://www.fswlab.in/doctorals') Md Noorul Hoda  
-              | is with us at FSW Lab for his Ph.D research
-              br
-            .event-div
-              | Interested  
-              a.home(href= 'http://www.fswlab.in/interns') Interns on  
-              span.font-weight-bold Robotic applications, Industry 4.0, Cloud computing
-              |  may apply
-              br
-            .event-div
-              span.font-weight-bold 
-              a.home(href= 'http://www.fswlab.in/facilities') Robotic FSW facility 
-              | has been procured under DHI-TCS project 
-              br
-            .event-div
-              span.font-weight-bold 
-              a.home(href= 'http://www.fswlab.in/doctorals') Soumya Sangita Nayak 
-              | has delivered Registration Seminar  
-              | on Numerical Modeling of Texture in FSW
-            br
-            .event-button.text-center
-              button.btn.btn-light(type='button', onclick="location.href='/news'") Read all News
+      //-   .col-md-3.space-d(style='margin-left: 5%;!important')
+      //-     .top-new.justify-content-center.bg-warning
+      //-       h3.text-center Whats New
+      //-       .event-div 
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Ranjan Kumar Vishwakarma 
+      //-         | joined Ph.D after completing MTech from FSW Lab
+      //-         br
+      //-       .event-div  
+      //-         span.font-weight-bold
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Ananta Dutta 
+      //-         | joined our FSW Lab after his MTech from IIT Bhubaneswar
+      //-         br
+      //-       .event-div  
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Md Noorul Hoda  
+      //-         | is with us at FSW Lab for his Ph.D research
+      //-         br
+      //-       .event-div
+      //-         | Interested  
+      //-         a.home(href= 'http://www.fswlab.in/interns') Interns on  
+      //-         span.font-weight-bold Robotic applications, Industry 4.0, Cloud computing
+      //-         |  may apply
+      //-         br
+      //-       .event-div
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/facilities') Robotic FSW facility 
+      //-         | has been procured under DHI-TCS project 
+      //-         br
+      //-       .event-div
+      //-         span.font-weight-bold 
+      //-         a.home(href= 'http://www.fswlab.in/doctorals') Soumya Sangita Nayak 
+      //-         | has delivered Registration Seminar  
+      //-         | on Numerical Modeling of Texture in FSW
+      //-       br
+      //-       .event-button.text-center
+      //-         button.btn.btn-light(type='button', onclick="location.href='/news'") Read all News
 
 
             
@@ -155,24 +230,24 @@ block content
           .col-md-3.hex-div.text-center.ab-img.my-auto
             img.rounded-circle(src='./img/FSW Lab.jpg', alt='', style='width: 300px;')
       
-      .row.space-d2
-        .col-md-3.prof-img.container(style='margin-left: 100px;padding-left: 0px;')
-          .hexagon2
-            .hexTop
-            .hexBottom
-        .col-md-7.prof-q(style='margin-right: 2%;margin-top:10%')
-          blockquote.blockquote.text-light
-            p.mb-0
+      //- .row.space-d2
+      //-   .col-md-3.prof-img.container(style='margin-left: 100px;padding-left: 0px;')
+      //-     .hexagon2
+      //-       .hexTop
+      //-       .hexBottom
+      //-   .col-md-7.prof-q(style='margin-right: 2%;margin-top:10%')
+      //-     blockquote.blockquote.text-light
+      //-       p.mb-0
               
-              | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
-              | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
-              | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
-              | It is a family of some enthusiastic minds....."
+      //-         | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
+      //-         | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
+      //-         | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
+      //-         | It is a family of some enthusiastic minds....."
               
-            fp.blockquote-footer
-              span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
-                a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
-                br
-                a.home(href= 'http://www.kgpchronicle.iitkgp.ac.in/mission-possible/') Lord Kumar Bhattacharyya Chair Professor in Manufacturing
-              cite(title='Source Title') 
-              p
+      //-       fp.blockquote-footer
+      //-         span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
+      //-           a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
+      //-           br
+      //-           a.home(href= 'http://www.kgpchronicle.iitkgp.ac.in/mission-possible/') Lord Kumar Bhattacharyya Chair Professor in Manufacturing
+      //-         cite(title='Source Title') 
+      //-         p

@@ -19,7 +19,7 @@ background-image:url("../img/bg0-blur.jpg") ;
 background-repeat: no-repeat;
 background-size: cover;
 }
-.navbar{
+.navbarb{
     text-transform: uppercase;
     background: #026929 !important; 
 }
@@ -105,10 +105,10 @@ border-right: solid 2px ;
     color: black;
 }
 .prof-img{
-    padding: 5%;
+    
 }
 .prof-q{
-    margin-top: 15%;
+    margin-top:2% ;
 }
 .facil-img{
     width: 400px;
