@@ -151,7 +151,6 @@ a.home{
     color: white;
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
-    display: block;
     height: 100vh;
     min-height: 350px;
     background: no-repeat center center scroll;
