@@ -52,3 +52,10 @@ function sortTable(n) {
       }
     }
   }
+  $(document).ready(function() {
+
+    if(window.location.href.indexOf('#Raju') != -1) {
+      $('#Raju').modal('show');
+    }
+  
+  });
