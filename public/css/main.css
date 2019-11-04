@@ -154,7 +154,7 @@ a.home{
     display: block;
     height: 100vh;
     min-height: 350px;
-    min-width: 150%
+    min-width: 150%;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
