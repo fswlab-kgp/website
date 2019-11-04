@@ -21,7 +21,7 @@ background-size: cover;
 }
 .navbar{
     text-transform: uppercase;
-    background: #000000 !important; 
+    background: #403534 !important; 
 }
 .nav-item{
     margin-right:1em ;
@@ -111,7 +111,7 @@ border-right: solid 2px ;
     margin-top: 15%;
 }
 .facil-img{
-    width: 200px;
+    width: 300px;
 }
 .facil-img-small{
     width: 200px;
