@@ -56,8 +56,8 @@ router.get('/skpal', function(req, res, next) {
 router.get('/cal', function(req, res, next) {
   res.render('cal', { title: 'Express' });
 });
-router.get('/.well-known/acme-challenge/', function(req, res, next) {
-  res.render('1', { title: 'Express' });
+router.get('/.well-known/acme-challenge/toflZYDJJBP1eM_CvStHwAW03wee9KI18cHhHAYl7Co', function(req, res, next) {
+  res.render('one', { title: 'Express' });
 });
 
 
