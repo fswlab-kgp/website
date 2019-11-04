@@ -56,5 +56,9 @@ router.get('/skpal', function(req, res, next) {
 router.get('/cal', function(req, res, next) {
   res.render('cal', { title: 'Express' });
 });
+router.get('/.well-known/acme-challenge/', function(req, res, next) {
+  res.render('1', { title: 'Express' });
+});
+
 
 module.exports = router;
