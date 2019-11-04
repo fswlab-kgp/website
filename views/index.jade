@@ -55,7 +55,7 @@ block content
           a.carousel-control-next(href='#carouselExampleCaptions', role='button', data-slide='next')
             span.carousel-control-next-icon(aria-hidden='true')
             span.sr-only Next
-      .col-md-4.bg-primary.p-5
+      .col-md-4.bg-profquote.p-5
         .row.prof-img.container.mx-auto.justify-content-center
           .hexagon2
             .hexTop
@@ -197,38 +197,74 @@ block content
             
             
             
-            
-      .row.text-white.space-d2.bg-about
-        br
-        br
-        .row.mx-auto
-          h2(style='padding-top: 30px;') About Friction Stir Welding Laboratory
-        .row
-          #about.col-md-8
-            br
-            br
-            p
-            span.font(style="")
-              | Friction Stir Welding Laboratory has been developed under the leadership of 
-              a.home(href= '/skpal') Prof. Surjya K Pal. 
-              | It is one of the vibrant laboratories of IIT Kharagpur, presently constituting a team of 
-              a.home(href='/Doctoral') fifteen doctoral scholars, and 
-              a.home(href= '/PG') four postgraduate scholars. 
+      .row      
+        .col-md-8.text-white.space-d2.bg-about
+          br
+          br
+          .row.mx-auto
+            h2(style='') About Friction Stir Welding Laboratory
+          .row
+            #about
               br
-              | Research spans from improvisation of the welding process, mechanical and metallurgical characterizations, 
-              | implementation of Industry 4.0 concepts for real time monitoring and control, and numerical modeling and simulation.
-              
-              | The laboratory houses several 
-              a.home(href= '/Facilities') state-of-the-art facilities 
-              | such as CNC and robotic FSW machines, sophisticated sensors.
-              | The laboratory provides experimental support to many institutions in India and Aborad on a regular basis. 
               br
-              | There is a huge inflow of  
-              a.home(href= '/Interns') interns 
-              | from several institutions across the nation in summer and winter seasons
-              | The lab has also got a strong active research collaboration with the industry. 
-          .col-md-3.hex-div.text-center.ab-img.my-auto
-            img.rounded-circle(src='./img/FSW Lab.jpg', alt='', style='width: 300px;')
+              p
+              span.font(style="")
+                | Friction Stir Welding Laboratory has been developed under the leadership of 
+                a.home(href= '/skpal') Prof. Surjya K Pal. 
+                | It is one of the vibrant laboratories of IIT Kharagpur, presently constituting a team of 
+                a.home(href='/Doctoral') fifteen doctoral scholars, and 
+                a.home(href= '/PG') four postgraduate scholars. 
+                br
+                | Research spans from improvisation of the welding process, mechanical and metallurgical characterizations, 
+                | implementation of Industry 4.0 concepts for real time monitoring and control, and numerical modeling and simulation.
+                
+                | The laboratory houses several 
+                a.home(href= '/Facilities') state-of-the-art facilities 
+                | such as CNC and robotic FSW machines, sophisticated sensors.
+                | The laboratory provides experimental support to many institutions in India and Aborad on a regular basis. 
+                br
+                | There is a huge inflow of  
+                a.home(href= '/Interns') interns 
+                | from several institutions across the nation in summer and winter seasons
+                | The lab has also got a strong active research collaboration with the industry. 
+        .col-md-3.space-d(style='margin-left: 5%;!important')
+          .top-new.justify-content-center.bg-warning
+            h3.text-center Whats New
+            .event-div 
+              span.font-weight-bold 
+              a.home(href= 'http://www.fswlab.in/doctorals') Ranjan Kumar Vishwakarma 
+              | joined Ph.D after completing MTech from FSW Lab
+              br
+            .event-div  
+              span.font-weight-bold
+              a.home(href= 'http://www.fswlab.in/doctorals') Ananta Dutta 
+              | joined our FSW Lab after his MTech from IIT Bhubaneswar
+              br
+            .event-div  
+              span.font-weight-bold 
+              a.home(href= 'http://www.fswlab.in/doctorals') Md Noorul Hoda  
+              | is with us at FSW Lab for his Ph.D research
+              br
+            .event-div
+              | Interested  
+              a.home(href= 'http://www.fswlab.in/interns') Interns on  
+              span.font-weight-bold Robotic applications, Industry 4.0, Cloud computing
+              |  may apply
+              br
+            .event-div
+              span.font-weight-bold 
+              a.home(href= 'http://www.fswlab.in/facilities') Robotic FSW facility 
+              | has been procured under DHI-TCS project 
+              br
+            .event-div
+              span.font-weight-bold 
+              a.home(href= 'http://www.fswlab.in/doctorals') Soumya Sangita Nayak 
+              | has delivered Registration Seminar  
+              | on Numerical Modeling of Texture in FSW
+            br
+            .event-button.text-center
+              button.btn.btn-light(type='button', onclick="location.href='/news'") Read all News
+        
       
       //- .row.space-d2
       //-   .col-md-3.prof-img.container(style='margin-left: 100px;padding-left: 0px;')

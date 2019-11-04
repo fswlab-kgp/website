@@ -31,7 +31,8 @@ background-size: cover;
     border-radius: 20px;
 }
 .space-d2{
-    margin: 1% 2% 1% 0%;
+    margin: 0% 2% 1% 0%;
+    padding-top: 0 !important;
 }
 .space-d{
     margin: 1% 1%;
@@ -78,6 +79,10 @@ margin:5% 7% ;
 .bg-about{
     background-color: #4d0000 ;
     padding: 3%;
+}
+.bg-profquote{
+    background-color: cornflowerblue;
+    opacity: .8;
 }
 .ab-img{
     margin-top: 1%;
