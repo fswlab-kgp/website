@@ -152,11 +152,13 @@ a.home{
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     display: block;
-    height: auto;
-    max-width: 150%;
-    line-height: 1;
-    margin:auto;
-    width: 150%; 
+    height: 100vh;
+    min height: 350px
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     }
 .fontsmall{
     font-size:.8em;
