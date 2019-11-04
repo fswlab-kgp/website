@@ -57,5 +57,52 @@ function sortTable(n) {
     if(window.location.href.indexOf('#Raju') != -1) {
       $('#Raju').modal('show');
     }
-  
+if(window.location.href.indexOf('#vyas') != -1) {
+      $('#vyas').modal('show');
+    }
+  if(window.location.href.indexOf('#abhishek') != -1) {
+      $('#abhishek').modal('show');
+    }
+  if(window.location.href.indexOf('#asadhu') != -1) {
+      $('#asadhu').modal('show');
+    }
+   if(window.location.href.indexOf('#debasish') != -1) {
+      $('#debasish').modal('show');
+    }
+   if(window.location.href.indexOf('#omkar') != -1) {
+      $('#omkar').modal('show');
+    }
+  if(window.location.href.indexOf('#surya') != -1) {
+      $('#surya').modal('show');
+    }
+  if(window.location.href.indexOf('#iqbal') != -1) {
+      $('#iqbal').modal('show');
+    }
+  if(window.location.href.indexOf('#debolina') != -1) {
+      $('#debolina').modal('show');
+    }
+  if(window.location.href.indexOf('#soumya') != -1) {
+      $('#soumya').modal('show');
+    }
+  if(window.location.href.indexOf('#pooja') != -1) {
+      $('#pooja').modal('show');
+    }
+  if(window.location.href.indexOf('#pooja') != -1) {
+      $('#pooja').modal('show');
+    }
+  if(window.location.href.indexOf('#pragya') != -1) {
+      $('#pragya').modal('show');
+    }
+  if(window.location.href.indexOf('#pooja') != -1) {
+      $('#pooja').modal('show');
+    }
+  if(window.location.href.indexOf('#ranjan') != -1) {
+      $('#ranjan').modal('show');
+    }
+  if(window.location.href.indexOf('#Nurool') != -1) {
+      $('#Nurool').modal('show');
+    }
+  if(window.location.href.indexOf('#ananta') != -1) {
+      $('#ananta').modal('show');
+    }
   });
