@@ -52,9 +52,9 @@ margin:5% 7% ;
 
 .top-new{
     padding: 10%;
-    height: 60vh;
+    /* height: 60vh; */
     margin-right: -30px;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 .event-div{
     border-top: solid black;
