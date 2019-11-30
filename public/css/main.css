@@ -22,6 +22,7 @@ background-size: cover;
 .navbarb{
     text-transform: uppercase;
     background: black !important; 
+    
 }
 .nav-item{
     margin-right:1em ;
@@ -31,8 +32,9 @@ background-size: cover;
     border-radius: 20px;
 }
 .space-d2{
-    margin: 0% 2% 1% 0%;
+    margin: 1% 2% 1% 0%;
     padding-top: 0 !important;
+    height: 100%;
 }
 .space-d{
     margin: 1% 1%;
@@ -49,7 +51,16 @@ margin:5% 7% ;
     background-size:cover ;
     height: 60vh;
 }
-
+.label-2
+{
+  text-align: center;
+  color: white;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  
+}
 .top-new{
     padding: 10%;
     /* height: 60vh; */
@@ -123,8 +134,8 @@ border-right: solid 2px ;
 }
 .collab-div{
     padding-top: 3em;
-    padding-left: 9em;
-    padding-right: 9em;
+    padding-left: 5em;
+    padding-right: 5em;
 }
 .collab-img{
     width: 11em;
@@ -149,6 +160,10 @@ a{
 }
 a.home{
     color: white;
+}
+.card-custom{
+    background-color: white;
+    margin: 2%;
 }
 .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     height: auto;

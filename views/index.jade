@@ -3,7 +3,7 @@ extends layout
 block content
   body.body-home
     include navbar
-    .bd-example.row
+    .bd-example.row.label-2
       .col-md-12.bg-dark
         #carouselExampleCaptions.carousel.slide(data-ride='carousel')
           ol.carousel-indicators
@@ -183,7 +183,7 @@ block content
             
             
             
-      .row      
+      .row(style="margin-top:2%")      
         .col-md-4.text-white.space-d2.bg-about
           br
           .row.mx-auto
@@ -211,7 +211,7 @@ block content
                 | from several institutions across the nation in summer and winter seasons
                 | The lab has also got a strong active research collaboration with the industry. 
         .col-md-3.space-d(style='margin-left: 1%;!important')
-          .top-new.justify-content-center.bg-warning
+          .top-new.justify-content-center.bg-warning(style='height:100%;')
             h3.text-center Whats New
             .event-div 
               span.font-weight-bold 
@@ -252,13 +252,13 @@ block content
             .hexagon2
               .hexTop
               .hexBottom
-            blockquote.text-light
-            p  
+          blockquote
+            p.text-white  
               | ".... trying to create an environment to fuflil the dreams of scholars on Friction Stir Welding. Glad to see 
               | young minds coming up with new avenues on problem-solutions. Amazed to see their day-in day-out hard work in 
               | achieving those. Brain-storming technical sessions, DIY workshop, and philosophical discussions are all part of it. 
               | It is a family of some enthusiastic minds....."
-              
+            br  
             fp.blockquote-footer
               span.font(style='color: #CEE91E; font-family:Georgia, serif; font-weight-bold; size=12px') 
                 a.home(href= 'http://www.fswlab.in/skpal') Surjya K Pal 
@@ -291,8 +291,8 @@ block content
       //-         p
 
 
-      .row.m-3.my-auto  
-        .col-md-3.my-auto  
+      .row.mx-auto(style='margin-top:5%')  
+        .col-md-3  
           .card.h-100(style='width: 18rem;height:')
             img.card-img-top(src='./img/patents/himal.jpg', alt='...')
             .card-body
@@ -301,7 +301,7 @@ block content
                 | Mr. Himal Agrawal has won in “ASME IDSC (Innovative Design Simulation Challenge)-2016”
               //a.btn.btn-primary(href='#') Go somewhere
             
-        .col-md-3.my-auto  
+        .col-md-3  
           .card.h-100(style='width: 18rem;')
             #carouselControls1.carousel.slide(data-ride='carousel')
               .carousel-inner
@@ -332,7 +332,7 @@ block content
                 .carousel-item
                   .card(style='width: 18rem;')
                     img.card-img-top(src='./img/banner/6.jpg', alt='...')
-                    .card-body
+                    .card-body.align-self-end
                       h5.card-title Our Fun
                       p.card-text
                         | Farewell to scholars from University of Johannesburg, SA
@@ -344,7 +344,7 @@ block content
                 span.carousel-control-next-icon(aria-hidden='true')
                 span.sr-only Next
 
-        .col-md-3.my-auto  
+        .col-md-3  
           .card.h-100(style='width: 18rem;')
             #carouselControls2.carousel.slide(data-ride='carousel')
               .carousel-inner
@@ -379,7 +379,7 @@ block content
                 span.carousel-control-next-icon(aria-hidden='true')
                 span.sr-only Next
 
-        .col-md-3.my-auto  
+        .col-md-3  
           .card.h-100(style='width: 18rem;')
             img.card-img-top(src='./img/patents/tcs.png', alt='...')
             .card-body
