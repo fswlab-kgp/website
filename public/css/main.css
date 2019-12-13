@@ -165,7 +165,7 @@ a.home{
     background-color: white;
     margin: 2%;
 }
-.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+/* .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     height: auto;
     width: auto;
     background: no-repeat center center scroll;
@@ -173,7 +173,18 @@ a.home{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    }
+    } */
 .fontsmall{
     font-size:.8em;
 }
+img{
+    max-width: 100%;
+    height: auto;
+    }
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   #brand-img{
+       max-width: 250px;
+   }
+
+  }
