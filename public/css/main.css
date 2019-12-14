@@ -186,15 +186,24 @@ img{
    #brand-img{
        max-width: 250px;
    }
-   .navbar{
-       width: 115%;
+   footer{
+       text-align:center
    }
-   footer,.l-f{
-       text-align:center;
+   .body-home{
        width:115%
    }
+   .body-home>.lf{
+    text-align:center;
+   }
+   .ind-con{
+       text-align: center;
 
-   body{
+       margin-left:5%;
        
+   }
+   
+   .head{
+       margin-left:50%;
+       margin-right:50%
    }
   }
