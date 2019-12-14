@@ -186,5 +186,15 @@ img{
    #brand-img{
        max-width: 250px;
    }
+   .navbar{
+       width: 115%;
+   }
+   footer,.l-f{
+       text-align:center;
+       width:115%
+   }
 
+   body{
+       
+   }
   }
