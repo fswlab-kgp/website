@@ -296,7 +296,7 @@ block content
       //-         p
 
 
-      .row.mx-auto(style='margin-top:5%')  
+      //.row.mx-auto(style='margin-top:5%')  
         .col-md-3  
           .card.h-80(style='width: 15rem;')
             img.mx-auto.card-img-top(src='./img/patents/himal.png', alt='...')
@@ -349,7 +349,7 @@ block content
                 span.carousel-control-next-icon(aria-hidden='true')
                 span.sr-only Next
 
-        .col-md-2.justify-content-center.text-center  
+        //.col-md-3.justify-content-center.text-center  
           .card.h-80(style='width: 15rem;')
             #carouselControls2.carousel.slide(data-ride='carousel')
               .carousel-inner
@@ -392,3 +392,63 @@ block content
               p.card-text
                 | Project with TCS on Industry 4.0
               a.btn.btn-primary(href='http://www.coeamt.com/industry-project-project1.php') Read more
+      
+        // Portfolio Grid
+      section#portfolio.page-section
+        .container
+          .row
+            .col-md-3.col-sm-6.portfolio-item
+              a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                .portfolio-hover
+                  .portfolio-hover-content
+                    i.fas.fa-plus.fa-3x
+                img.img-fluid(src='./img/patents/tcs11.png', alt='')
+              .portfolio-caption.bg-light
+                h4 Threads
+                p.text-muted Illustration
+            .col-md-3.col-sm-6.portfolio-item
+              #carouselControls2.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.card-img-top(src='./img/patents/vg.png', alt='...')
+                  .carousel-item
+                    img.card-img-top(src='./img/patents/cst.png', alt='...')
+                  .carousel-item
+                    img(src='./img/patents/foam.png', alt='...')
+              a.carousel-control-prev(href='#carouselControls2', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselControls2', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+              .portfolio-caption.bg-light
+                h4 Explore
+                p.text-muted Graphic Design
+            .col-md-3.col-sm-6.portfolio-item
+              #carouselControls1.carousel.slide(data-ride='carousel')
+                .carousel-inner
+                  .carousel-item.active
+                    img.card-img-top(src='./img/patents/vg.png', alt='...')
+                  .carousel-item
+                    img.card-img-top(src='./img/patents/cst.png', alt='...')
+                  .carousel-item
+                    img(src='./img/patents/foam.png', alt='...')
+              a.carousel-control-prev(href='#carouselControls1', role='button', data-slide='prev')
+                span.carousel-control-prev-icon(aria-hidden='true')
+                span.sr-only Previous
+              a.carousel-control-next(href='#carouselControls1', role='button', data-slide='next')
+                span.carousel-control-next-icon(aria-hidden='true')
+                span.sr-only Next
+              .portfolio-caption.bg-light
+                h4 Finish
+                p.text-muted Identity
+            .col-md-3.col-sm-6.portfolio-item
+              a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                .portfolio-hover
+                  .portfolio-hover-content
+                    i.fas.fa-plus.fa-3x
+                img.mx-auto.img-fluid(src='./img/patents/tcs11.png', alt='')
+              .portfolio-caption.bg-light
+                h4 Finish
+                p.text-muted Identity    
+            
