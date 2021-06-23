@@ -1,7 +1,11 @@
-h3(style='color: #2D1FF0; font-family:Georgia, serif; text-align:center') Total Publications : 278
+h3(style='color: #2D1FF0; font-family:Georgia, serif; text-align:center') Total Publications : 279
 br
 .container
   ul#myTab.nav.nav-tabs(role='tablist')
+    li.nav-item
+      a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
+        | Textbook &emsp;
+        h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (1)
     li.nav-item
       a#home-tab.nav-link.active(data-toggle='tab', href='#patents', role='tab', aria-controls='home', aria-selected='true')
         | Patents &emsp;
@@ -23,6 +27,8 @@ br
         | Conferences &emsp;
         h5.text-center(style='color: #7B1212; font-family:Georgia, serif,') (90)
 #myTabContent.tab-content
+  #textbook.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
+    include publications/overall/textbook
   #patents.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab')
     include publications/overall/patent
   #ijourn.tab-pane.fade(role='tabpanel', aria-labelledby='profile-tab')
